@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import {StyleSheet, View, Text, TouchableOpacity, Image} from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 
-export default class Navbar extends Component{
-    render(){
-        return(
+export default class Navbar extends Component {
+    render() {
+        return (
             <View style={styles.container}>
                 <View style={styles.titleContainer}><Text style={styles.mainTitle}>Biblioteca</Text></View>
                 <TouchableOpacity style={styles.searchButton}>
                     <Image style={styles.searchImage}
-                    source={require('../assets/img/search.png')}
+                        source={require('../assets/img/search.png')}
                     />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.alertButton}>
                     <Image style={styles.alertImage}
-                    source={require('../assets/img/alert.png')}
+                        source={require('../assets/img/alert.png')}
                     />
                 </TouchableOpacity>
             </View>
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         flex: .125,
         alignItems: 'center',
         justifyContent: 'space-around',
-        flexDirection:'row'
+        flexDirection: 'row'
     },
     titleContainer: {
         flex: 1,
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
         fontSize: 25,
         fontWeight: 'bold',
         textAlign: 'left',
+        fontFamily: 'QuicksandBold-Regular'
     },
     searchButton: {
         borderColor: '#000',
@@ -44,17 +45,17 @@ const styles = StyleSheet.create({
         borderRadius: 100
     },
     searchImage: {
-      resizeMode: "contain",
-      width: 25,
-        height: 25,
+        resizeMode: "contain",
+        width: 20,
+        height: 20,
     },
     alertButton: {
-        padding: 10,
+        padding: 15,
         marginHorizontal: 20
     },
     alertImage: {
-      resizeMode: "contain",
-      width: 25,
+        resizeMode: "contain",
+        width: 25,
         height: 25,
     },
 });
