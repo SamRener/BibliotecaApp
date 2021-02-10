@@ -49,6 +49,7 @@ export default class ListBook extends Component {
                 </TouchableOpacity>
               </View>
           }
+          style={styles.flatListBook}
         >
 
         </FlatList>
@@ -59,8 +60,8 @@ export default class ListBook extends Component {
 
 const styles = StyleSheet.create({
   listBook: {
-    flex: .45,
-    marginBottom: 15,
+    flex: .5,
+    marginBottom: 10,
     marginHorizontal: 15,
     marginStart: 10
   },
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: 'center',
     justifyContent: 'space-around',
-    marginVertical: 5
+    marginVertical: 1
   },
   titleListbookContainer: {
     flex: 1
@@ -96,8 +97,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 7,
   },
   bookButton: {
-    height: 176,
-    width: 100
+    height: 225,
+    width: 100,
+    flex: 1,
+    flexDirection: 'column'
   },
   bookTitle: {
     textAlign: 'center'
