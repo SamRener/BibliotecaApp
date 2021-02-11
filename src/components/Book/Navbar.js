@@ -55,14 +55,10 @@ const styles = StyleSheet.create({
         alignItems: 'flex-end',
         flexDirection: 'row'
     },
-    saveButton: {
-    },
     saveImage: {
         resizeMode: "contain",
         width: 25,
         height: 25,
-    },
-    moreButton: {
     },
     moreImage: {
         resizeMode: "contain",
