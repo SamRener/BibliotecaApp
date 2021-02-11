@@ -31,7 +31,7 @@ export default class ListBook extends Component {
       <View style={styles.listBook}>
         <View style={styles.headerListbook}>
           <View style={styles.titleListbookContainer}><Text style={styles.titleListbook}>{this.props.title}</Text></View>
-          <TouchableOpacity onPress={ () => {this.props.navigation.navigate('BookDetail')}} style={styles.moreButton}>
+          <TouchableOpacity  style={styles.moreButton}>
             <Image style={styles.moreImage}
               source={require('../assets/img/more.png')}
             />
@@ -43,7 +43,7 @@ export default class ListBook extends Component {
           renderItem={
             ({ item }) => 
               <View style={styles.bookItem} key={item.objectId}>
-                <TouchableOpacity style={styles.bookButton}>
+                <TouchableOpacity onPress={ () => {this.props.navigation.navigate('BookDetail')}} style={styles.bookButton}>
                   <Image style={styles.bookImage} source={item.Image}></Image>
                   <Text style={styles.bookTitle}>{item.Title}</Text>
                 </TouchableOpacity>

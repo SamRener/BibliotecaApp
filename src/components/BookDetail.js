@@ -6,9 +6,9 @@ export default class BookDetail extends Component{
   render() {
     return (
       <View style={styles.mainContainer}>
-        <Navbar/>
+        <Navbar navigation= {this.props.navigation}/>
         <View style={styles.infoContainer}>
-        <BookInfo/>
+        <BookInfo navigation= {this.props.navigation}/>
         </View>
       </View>
     )

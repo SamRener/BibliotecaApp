@@ -6,7 +6,7 @@ export default class Navbar extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.backButtonContainer}>
-                    <TouchableOpacity style={styles.backButton}>
+                    <TouchableOpacity onPress={ () => {this.props.navigation.goBack()}} style={styles.backButton}>
                         <Image style={styles.backImage}
                             source={require('../../assets/img/back.png')}
                         />

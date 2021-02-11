@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="4" height="16" viewBox="0 0 4 16">
-  <path id="Caminho_530" data-name="Caminho 530" d="M12,8a2,2,0,1,0-2-2A2.006,2.006,0,0,0,12,8Zm0,2a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,10Zm0,6a2,2,0,1,0,2,2A2.006,2.006,0,0,0,12,16Z" transform="translate(-10 -4)"/>
+<svg id="round-playlist_add_check" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <rect id="Retângulo_3030" data-name="Retângulo 3030" width="17" height="17" fill="none"/>
+  <path id="round-playlist_add_check-2" data-name="round-playlist_add_check" d="M9.792,8.833H2.708a.708.708,0,1,0,0,1.417H9.792a.708.708,0,0,0,0-1.417ZM9.792,6H2.708a.708.708,0,1,0,0,1.417H9.792A.708.708,0,0,0,9.792,6ZM2.708,13.083h4.25a.708.708,0,0,0,0-1.417H2.708a.708.708,0,0,0,0,1.417ZM16.315,10.4l.064.064a.705.705,0,0,1,0,1l-3.953,3.96a.705.705,0,0,1-1,0L9.239,13.232a.705.705,0,0,1,0-1L9.3,12.17a.705.705,0,0,1,1,0L11.931,13.8l3.386-3.393a.7.7,0,0,1,1-.007Z" transform="translate(-0.583 -2.458)" fill="#fff"/>
 </svg>
