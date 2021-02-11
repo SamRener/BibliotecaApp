@@ -31,7 +31,7 @@ export default class ListBook extends Component {
       <View style={styles.listBook}>
         <View style={styles.headerListbook}>
           <View style={styles.titleListbookContainer}><Text style={styles.titleListbook}>{this.props.title}</Text></View>
-          <TouchableOpacity style={styles.moreButton}>
+          <TouchableOpacity onPress={ () => {this.props.navigation.navigate('BookDetail')}} style={styles.moreButton}>
             <Image style={styles.moreImage}
               source={require('../assets/img/more.png')}
             />

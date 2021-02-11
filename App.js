@@ -1,22 +1,26 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
-import NavBar from './src/components/Navbar';
-import Home from './src/components/Home';
+import { createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
-export default class App extends Component{
-  render() {
-    return (
-      <View style={styles.mainContainer}>
-        <NavBar/>
-        <Home/>
-      </View>
-    )
+import Main from './src/components/Main';
+import BookDetail from './src/components/BookDetail';
+
+
+const MainNav = createStackNavigator(
+{
+    Main: {
+        screen: Main,
+        navigationOptions: {
+            header: null
+        }
+    },
+    BookDetail: {
+      screen: BookDetail,
+      navigationOptions: {
+          header: null
+      }
   }
 }
+)
 
-const styles = StyleSheet.create({
-  mainContainer: {
-    backgroundColor: '#FAFAFA',
-    flex: 1
-  }
-})
+export default createAppContainer(MainNav);
